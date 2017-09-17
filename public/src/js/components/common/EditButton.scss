@@ -1,0 +1,13 @@
+@import "../../../css/common.scss";
+
+:local {
+  .forgot-link {
+    color: $secondary-text-color;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+  .forgot-link:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

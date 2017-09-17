@@ -1,0 +1,27 @@
+@import "../../css/common.scss";
+
+:local {
+  .contact {
+    background-color: $light-primary-color;
+  }
+  .contact-container {
+    padding: 5vh 10vw;
+    min-height: 90vh;
+    position: relative;
+
+    .contact-paragraph {
+      color: $secondary-text-color;
+      font-size: 21px;
+      margin-bottom: 21px;
+    }
+
+    .reply {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+
+  .captcha {
+    margin: 16px;
+  }
+}

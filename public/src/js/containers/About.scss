@@ -1,0 +1,28 @@
+@import "../../css/common.scss";
+
+:local {
+  .about {
+    background-color: $light-primary-color;
+
+  }
+  .about-container {
+    padding: 2vh 10vw 8vh 10vw;
+    min-height: 85vh;
+    position: relative;
+
+    .about-title {
+      color: $primary-text-color;
+      font-size: 37px;
+      text-align: center;
+      margin: 21px 0;
+    }
+
+    .about-paragraph {
+      color: $secondary-text-color;
+      font-size: 21px;
+      margin-bottom: 21px;
+    }
+  }
+
+
+}

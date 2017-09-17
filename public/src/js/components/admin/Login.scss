@@ -1,0 +1,28 @@
+@import "../../../css/common.scss";
+
+:local {
+  .login {
+    padding: 10vh 10vw;
+
+    .input-section {
+      background-color: $light-primary-color;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid $default-primary-color;
+      border-radius: 5px;
+
+      .input-title {
+        margin-bottom: 10px;
+        color: $primary-text-color;
+      }
+
+      .input {
+        color: $primary-text-color;
+      }
+    }
+  }
+
+  .error {
+    margin-top: 20px;
+  }
+}

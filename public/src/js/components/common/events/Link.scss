@@ -1,0 +1,15 @@
+@import "../../../../css/common.scss";
+
+:local {
+  .link-block {
+
+    .link {
+      color: $default-primary-color;
+      text-decoration: underline;
+    }
+    .link:hover {
+      color: $default-primary-color;
+      font-weight: bold;
+    }
+  }
+}

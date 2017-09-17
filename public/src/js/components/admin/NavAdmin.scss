@@ -1,0 +1,11 @@
+@import "../../../css/common.scss";
+
+:local {
+  .admin-nav {
+    background-color: $dark-primary-color;
+    padding: 15px 10vw;
+  }
+  .nav-button {
+    margin: 0 10px;
+  }
+}

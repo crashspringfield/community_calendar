@@ -1,0 +1,31 @@
+@import "../../../../css/common.scss";
+
+:global {
+  .rdt {
+    display: inline-block!important;
+    width: 250px!important;
+  }
+}
+
+:local {
+  .day-and-time {
+    margin-bottom: 20px;
+
+    .start-block {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .end-block {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .time-title {
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+  }
+
+}

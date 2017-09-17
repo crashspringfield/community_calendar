@@ -1,0 +1,14 @@
+:local {
+  .event-type-block {
+    margin: 10px 0;
+    .event-type {
+
+    }
+    /* access Select modal w/o poluting global namespace */
+    div {
+      div {
+        width: 200px!important;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../../css/common.scss";
+
+:local {
+  .event {
+    background-color: $light-primary-color;
+    padding: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    .title {
+      div {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+    .day-and-time {
+      div {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+    .location {
+      div {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+    .event-type {
+      margin: 20px 0;
+      .button-block {
+
+      }
+    }
+    .description {
+      margin: 20px 0;
+      .button-block {
+
+      }
+    }
+    .link {
+      div {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+    .contact {
+      div {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+    .button-block {
+
+      button {
+        margin-left: 20px;
+      }
+    }
+  }
+}

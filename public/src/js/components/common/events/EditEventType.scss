@@ -1,0 +1,53 @@
+@import "../../../../css/common.scss";
+
+:global {
+  .Select-control {
+    width: 200px!important;
+    background-color: #fff;
+    border-color: #d9d9d9 #ccc #b3b3b3;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .Select-menu-outer {
+    width: 200px!important;
+  }
+}
+
+:local {
+  .select-block {
+    margin-bottom: 20px;
+
+    .select-container {
+      display: inline-block;
+      padding: 0px;
+      div {
+        span {
+          div {
+            background-color: #fff!important;
+            border-color: #d9d9d9 #ccc #b3b3b3;
+          }
+        }
+      }
+
+      .select-title {
+
+      }
+
+    }
+
+    .description {
+      display: inline-block;
+      padding-left: 250px;
+      margin-top: -50px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    .select-block {
+      .description {
+        padding-left: 0px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

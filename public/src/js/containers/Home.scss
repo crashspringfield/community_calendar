@@ -1,0 +1,16 @@
+@import "../../css/common.scss";
+:global {
+  body {
+    color: $primary-text-color;
+  }
+}
+
+:local {
+  .home {
+    background-color: $light-primary-color;
+    .home-container {
+      // position: relative;
+    }
+
+  }
+}

@@ -1,0 +1,83 @@
+@import "../../../css/common.scss";
+
+:local {
+  .account-modal {
+    position: absolute;
+    top: 5vh;
+    left: 25vw;
+    right: 25vw;
+    bottom: 5vh;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: $default-primary-color;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 4px;
+    outline: none;
+    padding: 30px;
+    z-index: 100;
+  }
+  .account-modal::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  .account-modal-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 10;
+  }
+
+  .modal-body {
+    padding-top: 10vh;
+    font-size: 16px;
+
+    .input-section {
+      background-color: $light-primary-color;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid $dark-primary-color;
+      border-radius: 5px;
+
+      .input-title {
+        margin-bottom: 10px;
+        color: $primary-text-color;
+      }
+
+      .input {
+        color: $primary-text-color;
+      }
+    }
+
+    .forgot-title {
+      color: $text-primary-color;
+      margin-bottom: 10px;
+    }
+
+    .forgot-link {
+      color: $text-primary-color;
+      text-align: right;
+      text-decoration: underline;
+      margin-top: 10px;
+    }
+    .forgot-link:hover {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+
+  .error {
+    color: $text-primary-color;
+  }
+  @media (max-width: 767px) {
+    .account-modal {
+      top: 5vh;
+      left: 5vw;
+      right: 5vw;
+      bottom: 5vh;
+    }
+  }
+
+}

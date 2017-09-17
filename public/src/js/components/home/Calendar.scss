@@ -1,0 +1,161 @@
+@import "../../../css/common.scss";
+
+:global {
+  /* react-select overrides */
+  .Select-control {
+    background-color: $button-text-color!important;
+  }
+  .Select-menu-outer {
+    z-index: 999!important;
+    background-color: $button-text-color!important;
+  }
+  .Select-option {
+    background-color: inherit;
+  }
+  .Select--multi .Select-multi-value-wrapper {
+    width: 100%;
+  }
+  .Select-value {
+    color: $text-primary-color!important;
+    background-color: $default-primary-color!important;
+    border: 1px solid $dark-primary-color;
+  }
+  .Select--multi .Select-value-icon {
+    border-right: 1px solid $text-primary-color!important;
+  }
+  .Select--multi .Select-value-icon:hover {
+    color: $text-primary-color!important;
+    font-weight: bold;
+  }
+  .Select-value-icon {
+    border-right: 1px solid $text-primary-color!important;
+  }
+  .Select-value-icon:hover {
+    color: $text-primary-color!important;
+    font-weight: bold;
+  }
+
+  /* react-big-calendar overrides */
+  .rbc-toolbar-label {
+    font-size: 28px;
+  }
+  .rbc-calendar {
+    color: $primary-text-color;
+  }
+  .rbc-toolbar {
+    button {
+      color: $button-text-color!important;
+      background-color: $accent-color!important;
+      border: 1px solid $accent-color;
+      border-radius: 20px;
+      &:hover {
+        cursor: pointer;
+        background-color: $accent-color;
+        border: 1px solid $button-text-color!important;
+      }
+      &:focus {
+        background-color: $accent-color;
+        border: 1px solid $button-text-color!important;
+      }
+      &:active {
+        background-color: $accent-color;
+        border: 1px solid $button-text-color!important;
+      }
+    }
+
+  }
+  .rbc-toolbar button:active, .rbc-toolbar button.rbc-active {
+    background-color: $accent-color!important;
+    border: 1px solid $button-text-color!important;
+  }
+  .rbc-month-view {
+    border: 1px solid $divider-color!important;
+  }
+  div.rbc-month-view {
+    border: 1px solid $divider-color!important;
+  }
+  .rbc-time-view {
+    border: 1px solid $divider-color!important;
+  }
+  .rbc-agenda-view {
+    border: 1px solid $divider-color!important;
+  }
+  .rbc-month-row {
+    border-top: 1px solid $divider-color!important;
+  }
+  .rbc-month-view .rbc-header {
+    border-bottom: 1px solid $divider-color!important;
+  }
+  .rbc-month-view .rbc-header + .rbc-header {
+    border-left: 1px solid $divider-color!important;
+    border-right: 1px solid $divider-color!important;
+  }
+  .rbc-day-bg + .rbc-day-bg {
+    border-left: 1px solid $divider-color!important;
+    border-right: 1px solid $divider-color!important;
+  }
+  .rbc-event {
+    background-color: $default-primary-color!important;
+    color: $text-primary-color;
+  }
+  .rbc-event.rbc-selected {
+    background-color: $default-primary-color!important;
+  }
+  .rbc-day-bg.rbc-today {
+    background-color: $button-text-color!important;
+  }
+  .rbc-show-more {
+    color: $default-primary-color!important;
+  }
+  .rbc-show-more:hover {
+    color: $default-primary-color!important;
+  }
+  .rbc-overlay {
+    background-color: $button-text-color!important;
+  }
+
+  @media (max-width: 767px) {
+    .rbc-toolbar {
+      display: block!important;
+    }
+    .rbc-btn-group {
+      display: block!important;
+    }
+    .rbc-agenda-view table .rbc-agenda-time-cell {
+      padding-left: 0;
+      padding-right: 0;
+      width: 70px;
+      display: inline-block;
+      overflow-x: hidden;
+      span {
+
+      }
+    }
+
+  }
+}
+
+:local {
+  .home-container {
+    padding: 0 20px 40px 20px;
+  }
+
+
+  .select-container {
+    margin: 20px;
+    div {
+      width: 100%!important;
+      span {
+        div {
+          min-width: 80px;
+          max-width: 110px;
+        }
+      }
+    }
+  }
+
+  .calendar-container {
+    height: 90vh;
+  }
+
+}

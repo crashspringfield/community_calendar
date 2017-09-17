@@ -1,0 +1,38 @@
+@import "../../../css/common.scss";
+
+:local {
+  .review-users {
+    padding: 5vh 10vw;
+
+    .header {
+      color: $light-primary-color;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .user {
+      background-color: $light-primary-color;
+      padding: 20px;
+      margin-bottom: 40px;
+      overflow: hidden;
+      border-radius: 20px;
+      .name {
+
+      }
+      .email {
+
+      }
+      .bio {
+
+      }
+
+      .button-block {
+
+        button {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

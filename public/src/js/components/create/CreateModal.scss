@@ -1,0 +1,80 @@
+@import "../../../css/common.scss";
+
+:local {
+  .event-modal {
+    position: absolute;
+    top: 5vh;
+    left: 15vw;
+    right: 15vw;
+    bottom: 5vh;
+    border: 1px solid $default-primary-color;
+    background-color: $light-primary-color;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 4px;
+    outline: none;
+    padding: 40px;
+    z-index: 100;
+  }
+  .event-modal::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  .event-modal-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 10;
+  }
+
+  .modal-body {
+    color: $primary-text-color;
+    font-size: 16px;
+    background-color: $light-primary-color;
+
+    .create-title {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .submit-button {
+      color:$text-primary-color;
+      background-color: $accent-color;
+      border: 1px solid $accent-color;
+      border-radius: 5px;
+    }
+    .submit-button:hover {
+      cursor: pointer;
+    }
+    .submit-button:focus {
+      border: none;
+      background-color: $accent-color;
+    }
+    .submit-button:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .message {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .button-block {
+    text-align: right;
+    padding: 0 40px;
+  }
+
+  @media (max-width: 767px) {
+    .event-modal {
+      left: 10vw;
+      right: 10vw;
+      padding: 20px;
+    }
+  }
+
+
+}

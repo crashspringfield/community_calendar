@@ -1,0 +1,54 @@
+@import "../../../css/common.scss";
+
+:global {
+  .nav-link {
+    color: $text-primary-color;
+    font-size: 16px;
+    &:hover {
+      color: $text-primary-color;
+      text-decoration: underline;
+    }
+  }
+  .navbar-toggler-icon {
+    background-color: $text-primary-color;
+    display: block;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+  .navbar-brand {
+    color: $text-primary-color;
+    font-size: 21px;
+    &:hover {
+      color: $text-primary-color;
+      text-decoration: underline;
+    }
+  }
+  .navbar-toggler {
+
+  }
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      padding: 10px;
+    }
+    .navbar-nav {
+      li {
+        button {
+          margin-left: 0px!important;
+          margin-bottom: 5px!important;
+        }
+      }
+    }
+  }
+}
+
+:local {
+  .cal-nav {
+    background-color: $dark-primary-color;
+    padding: 15px 10vw;
+  }
+  @media (max-width: 767px) {
+    .cal-nav {
+      padding: 5px;
+    }
+  }
+}

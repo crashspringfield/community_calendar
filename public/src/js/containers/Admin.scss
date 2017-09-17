@@ -1,0 +1,11 @@
+@import "../../css/common.scss";
+
+:local{
+  .admin-page {
+    min-height: 100vh;
+    background-color: $default-primary-color;
+    .admin {
+
+    }
+  }
+}

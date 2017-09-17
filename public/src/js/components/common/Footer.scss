@@ -1,0 +1,26 @@
+@import "../../../css/common.scss";
+
+:local {
+  .footer {
+    background-color: $dark-primary-color;
+    padding: 3vh;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .footer-text {
+      text-align: center;
+
+      .email {
+        color: $text-primary-color;
+        text-align: right;
+        margin-top: 10px;
+      }
+      .email:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+:local {
+  .description {
+    margin-bottom: 20px;
+    .description-label {
+      margin-bottom: 10px;
+    }
+    .description-text {
+      height: 150px;
+      width: 100%;
+      resize: vertical;
+    }
+  }
+}
