@@ -36,7 +36,11 @@ export default class CreateModal extends Component {
 
   updateDescription = (e) => this.setState({ description: e.target.value })
 
-  updateLink = (e) => this.setState({ link: e.target.value })
+  updateLink = (e) => {
+    // because the link href on the Link component is picky
+    const link = (e.target.value.substring(0,4) == 'http') ? e.target.value : `http://${e.target.value}`
+    this.setState({ link })
+  }
 
   updateContact = (e) => this.setState({ contact: e.target.value })
 

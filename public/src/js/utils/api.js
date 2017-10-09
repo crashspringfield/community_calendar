@@ -32,7 +32,7 @@ export default {
 
   update: (token, event, id) => axios.put(`api/events/${id}?token=${token}`, event)
     .then(res => {
-      if (res.status == 201) {
+      if (res.status == 200) {
         return res.data
       }
       throw new Error(res.error)
